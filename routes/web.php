@@ -24,6 +24,8 @@ Route::get('/', function () {
 
 Route::get('login/google', [SocialMediaAuthController::class, 'googleRedirect'])->name('login.google');
 Route::get('login/google/callback', [SocialMediaAuthController::class, 'handleGoogleCallback']);
+Route::get('login/facebook', [SocialMediaAuthController::class, 'facebookRedirect'])->name('login.facebook');
+Route::get('login/facebook/callback', [SocialMediaAuthController::class, 'handleFacebookCallback']);
 
 Auth::routes();
 

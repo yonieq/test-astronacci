@@ -168,7 +168,7 @@
                             <a href="{{ route('register') }}" class="btn btn-outline-primary d-grid w-100 mt-2">Sign up</a>
                         </div>
                         <div class="d-flex justify-content-center mt-4">
-                            <a href="#" class="btn btn-facebook btn-icon-only btn-pill">
+                            <a href="{{ route('login.facebook') }}" class="btn btn-facebook btn-icon-only btn-pill">
                                 <i class="bx bxl-facebook"></i>
                             </a>
                             <a href="{{ route('login.google') }}" class="btn btn-google btn-icon-only btn-pill">
